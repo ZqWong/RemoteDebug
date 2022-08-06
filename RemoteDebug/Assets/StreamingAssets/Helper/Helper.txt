@@ -1,0 +1,26 @@
+
+设备名称:                     {0}
+本地连接IPv6地址:       {1}
+本地连接IPv4地址:       {2}
+当前监听端口号为:       {3}
+
+请在代码中设置 IP 地址为 -> {4}
+(ExceptionCatchManager.Instance.UDPIP = "{5}";)
+
+请在代码中设置端口地址为 -> {6};
+(ExceptionCatchManager.Instance.UDPPort = {7};)
+
+监听端口号可以在上方输入框中自定义（默认监听9621）
+启动服务器失败请确认本地端口是否被占用.
+ - 启动 CMD.
+ - 运行命令 netstat -aon|findstr \"{8}\" 查询端口占用进程.
+ - 运行命令 tasklist|findstr \"{9}\" 强制关闭进程.
+ - START
+
+C# 示例代码：
+
+    ExceptionCatchManager.Instance.EnableHandler = true;
+    ExceptionCatchManager.Instance.UDPIP = "172.16.7.128";
+    ExceptionCatchManager.Instance.UDPPort = 9621;
+    ExceptionCatchManager.Instance.EnableRemoteDebug = true;
+

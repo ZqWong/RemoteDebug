@@ -1,0 +1,20 @@
+{
+    "releaseNotes":
+    [
+        {
+            "index":2,
+            "title":"Release 1.0.1",
+            "contents":[
+                "内容显示调整"
+            ]
+        },
+        {
+            "index":1,
+            "title":"Release 1.0.0",
+            "contents":[
+                "自定义监听端口号",                
+                "异常级别筛选"
+            ]
+        }
+    ]
+}
